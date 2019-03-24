@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/kamalnyc17/Node-Word-Guess#readme",
   "dependencies": {
-    "inquirer": "^6.2.2"
+    "confirm-simple": "^1.0.3",
+    "inquirer": "^6.2.2",
+    "random-word": "^2.0.0"
   }
 }
