@@ -20,6 +20,7 @@
   "dependencies": {
     "confirm-simple": "^1.0.3",
     "inquirer": "^6.2.2",
+    "prompt-confirm": "^2.0.4",
     "random-word": "^2.0.0"
   }
 }

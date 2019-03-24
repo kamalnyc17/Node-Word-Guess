@@ -1,9 +1,9 @@
 // importing packages
-var randomWord  = require("random-word");
-var inquirer    = require("inquirer");
+var randomWord = require("random-word");
+var inquirer = require("inquirer");
 
 // importing Word constructor
-var Word        = require("./word");
+var Word = require("./word");
 
 // global variables
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -15,7 +15,6 @@ var newWord;
 
 // game starts here
 initSection();
-userInput();
 
 // function to process user input
 function userInput() {
@@ -44,29 +43,33 @@ function userInput() {
                     initSection();
                 } else if (newWord.guessLetter(response.guess.toLowerCase())) {
                     console.log("\x1b[1m", "\x1b[32m", "\nCORRECT !!!", "\x1b[0m");
+                    userInput();
                 } else {
                     guessNo--;
-                    if( guessNo === 0){
-                        console.log("\x1b[1m", "\x1b[31m", "\nYOU LOSE! NEXT WORD !!! <Press Ctrl+C to Exit>", "\x1b[0m");
+                    if (guessNo === 0) {
+                        console.log("\x1b[1m", "\x1b[31m", "\nYOU LOSE! The Correct Word is: " + guessedWord + ". NEXT WORD !!! <Press Ctrl+C to Exit>", "\x1b[0m");
                         // setting up a new game
                         initSection();
                     } else {
                         console.log("\x1b[1m", "\x1b[31m", "\nINCORRECT !!! Number of Guesses Remaining: " + guessNo, "\x1b[0m");
+                        userInput();
                     }
                 }
-                userInput();
             })
     }
 }
 
 // function to initialize game
 function initSection() {
-    guessNo = 10;
+    guessNo     = 15;
     // guess a random word
     guessedWord = randomWord();
     newWord     = new Word(guessedWord);
-    console.log(guessedWord);
-    
+    //console.log(guessedWord); --> UNCOMMENT IT DURING TRESTING
+
     // displaying the place holder for the word
-    console.log( placeHolder.repeat( guessedWord.length ) ); 
+    console.log(placeHolder.repeat(guessedWord.length));
+
+    // main function    
+    userInput();
 }
