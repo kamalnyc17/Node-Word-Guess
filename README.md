@@ -9,3 +9,8 @@ In this project we have created a CLI based video game to guess a word using Nod
 
 Here are few more relavant screen shots for this game:-
 
+## This is how a winning looks like
+
+
+## This is how a losing looks like
+![Loser](https://github.com/kamalnyc17/Node-Word-Guess/blob/master/images/Loser.jpg)
