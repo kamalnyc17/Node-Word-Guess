@@ -13,7 +13,7 @@ Here are few more relavant screen shots for this game:-
 ![validate](https://github.com/kamalnyc17/Node-Word-Guess/blob/master/images/Validation.jpg)
 
 ## This is how winning looks like
-
+![Winner](https://github.com/kamalnyc17/Node-Word-Guess/blob/master/images/Winer.jpg)
 
 ## This is how losing looks like
 ![Loser](https://github.com/kamalnyc17/Node-Word-Guess/blob/master/images/Loser.jpg)
