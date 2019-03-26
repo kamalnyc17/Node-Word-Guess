@@ -10,7 +10,8 @@ In this project we have created a CLI based video game to guess a word using Nod
 Here are few more relavant screen shots for this game:-
 
 ## Input validation to allow only a-z
-![validate]()
+![validate](https://github.com/kamalnyc17/Node-Word-Guess/blob/master/images/Validation.jpg)
+
 ## This is how winning looks like
 
 
