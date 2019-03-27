@@ -6,7 +6,7 @@ var placeHolder = "-";
 
 // defining word constructor
 var Word = function( strWord ) {
-    this.letterArr  = strWord.split("").map(function(item){return new Letter(item, false)}); // initializing letter object with the letters of the word & isFound=false
+    this.letterArr  = strWord.split("").map((item) => {return new Letter(item, false)}); // initializing letter object with the letters of the word & isFound=false
     this.tempWord   = placeHolder.repeat( this.letterArr.length ).split("");  // initializing the placeholder with "-"
 }
 
