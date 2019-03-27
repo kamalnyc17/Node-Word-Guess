@@ -12,7 +12,6 @@ Letter.prototype.strCompare = function (strInput) {
         } return "-";
     } return this.strCorrect;
 }
-
 // function to check if the input letter is correct
 Letter.prototype.checkIsFound = function (strInput) {
     if (this.strCorrect === strInput) {
