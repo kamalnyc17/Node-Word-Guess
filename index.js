@@ -64,7 +64,7 @@ function initSection() {
     guessNo     = 15;
     // guess a random word
     guessedWord = randomWord();
-    newWord     = new Word(guessedWord)
+    newWord     = new Word(guessedWord);
 
     // displaying the place holder for the word
     console.log(placeHolder.repeat(guessedWord.length));
