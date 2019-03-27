@@ -1,5 +1,5 @@
 // creating the Letter constructor
-var Letter = function (strCorrect, isFound) {
+let Letter = function (strCorrect, isFound) {
     this.strCorrect = strCorrect.toLowerCase();
     this.isFound = isFound;
 }

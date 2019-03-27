@@ -1,17 +1,17 @@
 // importing packages
-var randomWord = require("random-word");
-var inquirer = require("inquirer");
+const randomWord = require("random-word");
+const inquirer = require("inquirer");
 
 // importing Word constructor
-var Word = require("./word");
+const Word = require("./word");
 
 // global variables
-var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var guessNo;
-var currWord;
-var placeHolder = "-";
-var guessedWord;
-var newWord;
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let guessNo;
+let currWord;
+let placeHolder = "-";
+let guessedWord;
+let newWord;
 
 // game starts here
 initSection();
