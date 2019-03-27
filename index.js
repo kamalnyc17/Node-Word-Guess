@@ -25,7 +25,7 @@ function userInput() {
                 type: "input",
                 message: "Guess a Letter! ",
                 name: "guess",
-                validate: function (val) {
+                validate: (val) => {
                     if (alphabet.includes(val.toLowerCase())) {
                         return true;
                     } else {
@@ -33,7 +33,7 @@ function userInput() {
                         return false
                     }
                 }
-            }]).then(function (response) {
+            }]).then((response) => {
                 currWord = newWord.displayWord(response.guess.toLowerCase()).join('');
                 console.log(currWord);
 
