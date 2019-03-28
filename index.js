@@ -59,7 +59,7 @@ function userInput() {
     }
 }
 
-// function to initialize game
+// function to initialize game and start the game
 function initSection() {
     guessNo     = 15;
     // guess a random word
