@@ -29,7 +29,7 @@ function userInput() {
                     if (alphabet.includes(val.toLowerCase())) {
                         return true;
                     } else {
-                        console.log("\x1b[1m", "\x1b[31m", "\nINVALID ENTRY: Enter a letter between a-z", "\x1b[0m");
+                        console.log(`\x1b[1m \x1b[31m \nINVALID ENTRY: Enter a letter between a-z \x1b[0m`);
                         return false
                     }
                 }
