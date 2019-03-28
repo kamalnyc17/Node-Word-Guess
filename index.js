@@ -38,20 +38,20 @@ function userInput() {
                 console.log(currWord);
 
                 if (currWord === guessedWord) {
-                    console.log("\x1b[1m", "\x1b[32m", "\nYOU WIN! NEXT WORD !!! <Press Ctrl+C to Exit>", "\x1b[0m");
+                    console.log(`\x1b[1m \x1b[32m \nYOU WIN! NEXT WORD !!! <Press Ctrl+C to Exit> \x1b[0m`);
                     // setting up a new game
                     initSection();
                 } else if (newWord.guessLetter(response.guess.toLowerCase())) {
-                    console.log("\x1b[1m", "\x1b[32m", "\nCORRECT !!!", "\x1b[0m");
+                    console.log(`\x1b[1m \x1b[32m \nCORRECT !!! \x1b[0m`);
                     userInput();
                 } else {
                     guessNo--;
                     if (guessNo === 0) {
-                        console.log("\x1b[1m", "\x1b[31m", "\nYOU LOSE! The Correct Word is: " + guessedWord + ". NEXT WORD !!! <Press Ctrl+C to Exit>", "\x1b[0m");
+                        console.log(`\x1b[1m \x1b[31m \nYOU LOSE! The Correct Word is: ${guessedWord} NEXT WORD !!! <Press Ctrl+C to Exit> \x1b[0m`);
                         // setting up a new game
                         initSection();
                     } else {
-                        console.log("\x1b[1m", "\x1b[31m", "\nINCORRECT !!! Number of Guesses Remaining: " + guessNo, "\x1b[0m");
+                        console.log(`\x1b[1m \x1b[31m \nINCORRECT !!! Number of Guesses Remaining: ${guessNo} \x1b[0m`);
                         userInput();
                     }
                 }
